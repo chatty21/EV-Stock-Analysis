@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Correlation Analysis</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Correlation Analysis of EV Stocks</h1>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/performance">Stock Performance</a>
+        <a href="/correlation">Correlation</a>
+        <a href="/events">Market Events</a>
+        <a href="/prediction">Prediction</a>
+        <a href="/statistics">Statistics</a>
+        <a href="/comparison">Market Comparison</a>
+    </nav>
+</header>   
+
+    <section class="container">
+        <h2>Correlation Between EV Stocks</h2>
+        <p>{{ summary }}</p>
+        
+        <div class="chart-container">
+            <img src="{{ correlation_img_path }}" alt="Correlation Matrix Heatmap">
+        </div>
+
+        <section>
+            <h3>Correlation Matrix</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        {% for company in correlation_matrix.columns %}
+                            <th>{{ company }}</th>
+                        {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for index, row in correlation_matrix.iterrows() %}
+                        <tr>
+                            <td>{{ index }}</td>
+                            {% for value in row %}
+                                <td>{{ value | round(2) }}</td>
+                            {% endfor %}
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </section>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 ElectraStock | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ company }} Stock Performance</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <header>
+        <h1>{{ company }} Stock Price Trends</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/performance">Stock Performance</a>
+            <a href="/correlation">Correlation</a>
+            <a href="/events">Market Events</a>
+            <a href="/prediction">Prediction</a>
+            <a href="/statistics">Statistics</a>
+            <a href="/comparison">Market Comparison</a>
+        </nav>
+    </header>
+    <section>
+        <h1>{{ company }} Stock Performance</h1>
+    
+    <!-- Plot of stock price -->
+    <h3>{{ company }} Stock Price</h3>
+    <div>{{ plot|safe }}</div>
+    
+    <form method="POST">
+        <label for="company">Select Company:</label>
+        <select name="company">
+            {% for company in companies %}
+                <option value="{{ company }}" {% if company == selected_company %} selected {% endif %}>{{ company }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Update</button>
+    </form>
+
+        <div>
+            {{ plot | safe }}
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 EV Stock Analysis | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

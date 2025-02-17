@@ -1,0 +1,235 @@
+/* General body styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #ff941a; /* Dark orange background */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2.5rem; /* Larger font size for the title */
+    font-weight: bold;
+    text-transform: uppercase; /* Makes the text uppercase */
+    letter-spacing: 2px; /* Adds space between letters for a clean look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+}
+
+/* Navbar styles */
+nav {
+    margin: 20px 0;
+    text-align: center;
+}
+
+nav a {
+    font-size: 1.2rem;
+    color: #003366;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* Section Titles */
+h1, h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+/* News Section Styles */
+.news-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.news-card {
+    background-color: #ffffff;
+    border: 1px solid #e1e1e1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 30%;
+    transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+    transform: scale(1.05);
+}
+
+.card-header {
+    background-color: #ff941a; /* Same orange color for the header */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.news-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.news-item {
+    margin-bottom: 20px;
+}
+
+.news-title {
+    font-size: 18px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.news-title:hover {
+    text-decoration: underline;
+}
+
+.news-description {
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.news-date {
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
+}
+
+/* Form and Inputs */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+form label {
+    font-size: 1.1rem;
+    margin-right: 10px;
+}
+
+select, button {
+    font-size: 1rem;
+    padding: 12px;
+    margin-right: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+select:focus, button:focus {
+    outline: none;
+    border-color: #007BFF;
+}
+
+/* Button hover effect */
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #003366;
+    color: white;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px; /* Adds space below the table */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f7fc;
+    font-weight: bold;
+}
+
+td {
+    background-color: #fff;
+}
+
+/* Margin Adjustments */
+.container {
+    margin: 20px auto;  /* Adds margin around the container */
+    padding: 20px;
+    width: 85%;  /* Adjust the width for more space */
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 40px; /* Adds space after each section */
+}
+
+h2 {
+    margin-bottom: 20px; /* Adds space below the section title */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .news-card {
+        width: 100%;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    h1, h2 {
+        font-size: 2rem;
+    }
+}
