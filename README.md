@@ -38,25 +38,50 @@ python app.py
 ```
 Open your browser and go to: http://127.0.0.1:5002/
 
-🛠 Technologies Used
-Frontend: HTML, CSS (Bootstrap, Plotly.js)
-Backend: Flask
-Database: Pandas (CSV-based data storage)
-Machine Learning: TensorFlow, LSTM Neural Networks
-Visualization: Matplotlib, Seaborn, Plotly
-APIs: News API (for fetching market news)
+## 🛠 Technologies Used
+- **Frontend**: HTML, CSS (Bootstrap, Plotly.js)
+- **Backend**: Flask
+- **Database**: Pandas (CSV-based data storage)
+- **Machine Learning**: TensorFlow, LSTM Neural Networks
+- **Visualization**: Matplotlib, Seaborn, Plotly
+- **APIs**: News API (for fetching market news)
 
-🤝 Contributing
+---
+
+## 🏢 Project Structure
+```
+ev-stock-analysis/
+│── data/                     # Stock datasets (CSV files)
+│── static/                   # CSS, JS, Images
+│── templates/                # HTML templates
+│── app.py                    # Flask application
+│── requirements.txt           # Python dependencies
+│── README.md                  # Project documentation
+```
+
+## 🤝 Contributing
 Want to improve this project? Feel free to contribute! Follow these steps:
 
-Fork the repository
-Create a new branch: git checkout -b feature-name
-Make your changes
-Commit changes: git commit -m "Add feature"
-Push: git push origin feature-name
-Open a Pull Request
+1. **Fork the repository**
+2. **Create a new branch**  
+   ```bash
+   git checkout -b feature-name
+   ```
+3. **Make your changes**
+4. **Commit changes**  
+   ```bash
+   git commit -m "Add feature"
+   ```
+5. **Push the changes**  
+   ```bash
+   git push origin feature-name
+   ```
+6. **Open a Pull Request**
 
-🚀 Connect with Me
-💼 LinkedIn: Chaitanya Patil
-📧 Email: chatty21@example.com
-🔗 GitHub: chatty21
+---
+
+## 🚀 Connect with Me
+- 🎼 **LinkedIn**: [Chaitanya Patil](https://linkedin.com/in/chaitanya-patil)
+- 📧 **Email**: chatty21@example.com
+- 🔗 **GitHub**: [chatty21](https://github.com/chatty21)
+
