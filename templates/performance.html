@@ -23,9 +23,6 @@
         <h1>{{ company }} Stock Performance</h1>
     
     <!-- Plot of stock price -->
-    <h3>{{ company }} Stock Price</h3>
-    <div>{{ plot|safe }}</div>
-    
     <form method="POST">
         <label for="company">Select Company:</label>
         <select name="company">
@@ -35,7 +32,8 @@
         </select>
         <button type="submit">Update</button>
     </form>
-
+    <h3>{{ company }} Stock Price</h3>
+    <div>{{ plot|safe }}</div>
         <div>
             {{ plot | safe }}
         </div>
