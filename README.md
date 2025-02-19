@@ -18,24 +18,23 @@ EV Stock Analysis is a **comprehensive stock analysis and prediction platform** 
 ```bash
 git clone https://github.com/chatty21/ev-stock-analysis.git
 cd ev-stock-analysis
-2️⃣ Set Up a Virtual Environment
-bash
-Copy
-Edit
+
+### **2️⃣ Set Up a Virtual Environment**
+```bash
 python -m venv venv
 source venv/bin/activate  # macOS/Linux
 venv\Scripts\activate  # Windows
-3️⃣ Install Dependencies
-bash
-Copy
-Edit
+
+### **3️⃣ Install Dependencies**
+```bash
 pip install -r requirements.txt
-4️⃣ Run the Flask App
-bash
-Copy
-Edit
+
+### **4️⃣ Run  the Flask App**
+```bash   
 python app.py
+
 Open your browser and go to: http://127.0.0.1:5002/
+
 🛠 Technologies Used
 Frontend: HTML, CSS (Bootstrap, Plotly.js)
 Backend: Flask
@@ -43,17 +42,7 @@ Database: Pandas (CSV-based data storage)
 Machine Learning: TensorFlow, LSTM Neural Networks
 Visualization: Matplotlib, Seaborn, Plotly
 APIs: News API (for fetching market news)
-🏗 Project Structure
-csharp
-Copy
-Edit
-ev-stock-analysis/
-│── data/                     # Stock datasets (CSV files)
-│── static/                   # CSS, JS, Images
-│── templates/                # HTML templates
-│── app.py                    # Flask application
-│── requirements.txt           # Python dependencies
-│── README.md                  # Project documentation
+
 🤝 Contributing
 Want to improve this project? Feel free to contribute! Follow these steps:
 
@@ -63,6 +52,7 @@ Make your changes
 Commit changes: git commit -m "Add feature"
 Push: git push origin feature-name
 Open a Pull Request
+
 🚀 Connect with Me
 💼 LinkedIn: Chaitanya Patil
 📧 Email: chatty21@example.com
