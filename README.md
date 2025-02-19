@@ -18,21 +18,24 @@ EV Stock Analysis is a **comprehensive stock analysis and prediction platform** 
 ```bash
 git clone https://github.com/chatty21/ev-stock-analysis.git
 cd ev-stock-analysis
+```
 
 ### **2️⃣ Set Up a Virtual Environment**
 ```bash
 python -m venv venv
 source venv/bin/activate  # macOS/Linux
 venv\Scripts\activate  # Windows
+```
 
 ### **3️⃣ Install Dependencies**
 ```bash
 pip install -r requirements.txt
+```
 
 ### **4️⃣ Run  the Flask App**
 ```bash   
 python app.py
-
+```
 Open your browser and go to: http://127.0.0.1:5002/
 
 🛠 Technologies Used
