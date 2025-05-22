@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: ev-stock-analysis
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: NEWS_API_KEY
+        value: YOUR_API_KEY_HERE  # Replace this or set it manually in Render dashboard
